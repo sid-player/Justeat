@@ -1,0 +1,571 @@
+/*---------------------------test-----------------------*/
+
+.bordercheck {
+  border: 2px solid blue;
+}
+/*---------------------------test-----------------------*/
+
+/* CSS FOR LANDING PAGE BEGINS */
+/* 
+
+
+*/
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Allura&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Marck+Script&display=swap");
+:root {
+  --default-color: #ecfaff;
+  --secondary-color: #04acfe;
+  --font-type: Poppins;
+  --default-font-color: #2e266f;
+}
+
+/* LOADING ANIMATION */
+.loading_container {
+  display: flex;
+  justify-content: center;
+  margin-top: 200px;
+}
+/*-----------LOADING ANIMATION END------------*/
+
+.landingPage {
+  background-color: var(--default-color);
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+*:focus {
+  outline-color: #d2f8ff;
+}
+
+/* TOP CONTAINER BEGIN */
+
+.topContainer {
+  display: flex;
+  flex-direction: column;
+  height: 70%;
+  width: 100%;
+}
+
+/* LEFT CONTAINER BEGIN */
+.topleft_cont {
+  padding: 2rem;
+}
+/* LOGO CONTAINER BEGIN*/
+
+.logo_container {
+  display: flex;
+}
+.logo {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.LogoName {
+  font-family: monospace;
+  align-self: center;
+  margin-left: 5px;
+  font-size: 30px;
+  color: #2e266f;
+}
+/*-----------LOGO CONTAINER END------------*/
+
+/* TEXT CONTAINER BEGIN */
+.text_food {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 900;
+  color: #2e266f;
+  opacity: 0.1;
+  font-size: 75px;
+}
+
+.para1 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 3rem;
+  color: #2e266f;
+}
+/*-----------TEXT CONTAINER END------------*/
+
+/* SEARCH CONTAINER BEGIN */
+.input_container {
+  width: 70%;
+  border-radius: 5;
+  display: flex;
+  position: relative;
+  margin-top: 10px;
+}
+.go_button {
+  width: 20%;
+  position: absolute;
+  right: 0;
+  height: 100%;
+  background-color: #04acfe;
+  color: white;
+  border-top-left-radius: 5em;
+  font-size: 25px;
+  text-align: center;
+  border: none;
+}
+.go_button:focus {
+  outline: none;
+}
+.input {
+  width: 100%;
+  height: 50px;
+  filter: drop-shadow(0px 3px 5px rgba(70, 65, 65, 0.161));
+  border: none;
+  border-radius: 10px;
+}
+/*-----------SEARCH CONTAINER END------------*/
+/*-----------LEFT CONTAINER END------------*/
+
+/* RIGHT CONTAINER BEGIN */
+
+.right_container {
+  position: absolute;
+  left: 34.5%;
+  width: 30%;
+  height: 20em;
+  background: #04acfe;
+}
+.food_img1 {
+  /* THIS IS FOR FOOD1 IMAGE */
+  width: 97%;
+  height: 100%;
+  object-fit: contain;
+  z-index: 1;
+  position: relative;
+}
+
+/* BUTTON CONTAINER BEGIN */
+.button_grp {
+  margin-top: 2em;
+  height: 3rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.login_button {
+  background-color: var(--default-color);
+  border: none;
+  font-style: Poppins;
+  color: var(--secondary-color);
+}
+.login_button:focus,
+.signup_btn:focus {
+  outline: none;
+}
+.signup_btn {
+  background-color: #d2f8ff;
+  border: none;
+  font-style: Poppins;
+  color: var(--secondary-color);
+  border-radius: 5px;
+}
+/*-----------BUTTON CONTAINER END------------*/
+/*-----------RIGHT CONTAINER END------------*/
+/*-----------TOP CONTAINER END------------*/
+
+/* OUR CANTEEN CONTAINER BEGIN */
+
+.middle_container {
+  display: flex;
+  margin: 5%;
+}
+#our_canteens {
+  box-shadow: 4px 8px 4px var(--secondary-color);
+  width: 90%;
+  padding: 1%;
+}
+/* CANTEEN HEADING TILE BEGIN */
+.text_support {
+  background-color: #04acfe;
+  width: 20px;
+  height: 100px;
+}
+
+.heading2 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 3rem;
+  color: #2e266f;
+  width: 25%;
+  margin-left: 1rem;
+}
+
+.heading3 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 3rem;
+  color: #2e266f;
+  width: 50%;
+  margin-left: 20rem;
+}
+.quote1 {
+  font-family: "Lobster", "Great Vibes", "Sacramento", "Allura", "Marck Script",
+    Poppins;
+  font-weight: 200;
+  line-height: 2.5rem;
+}
+/*-----------CANTEEN HEADING TILE END------------*/
+.Card_container {
+  /* CANTEEN CARD CONTAINER */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 2%;
+}
+/* SEE MORE CONTAINER */
+.see_more_div {
+  background-color: var(--default-color);
+  width: 300px;
+  height: 400px;
+  color: #2e266f;
+  transition-duration: 0.5s;
+  font-size: 32px;
+  /* border: 2px solid #4dc9ff; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.see_more_div:hover {
+  background-color: var(--secondary-color);
+  color: var(--default-color);
+  box-shadow: 0px 0px 3px 5px #4dc9ff;
+  cursor: pointer;
+}
+/*-----------SEE MORE CONTAINER END------------*/
+/*-----------OUR CANTEEN CONTAINER END------------*/
+
+/* SERVICES CONTAINER BEGIN */
+.quote_icon {
+  font-size: 12px;
+}
+.quote2 {
+  font-family: "Lobster", "Great Vibes", "Sacramento", "Allura", "Marck Script",
+    Poppins;
+  font-weight: 200;
+  line-height: 2rem;
+}
+#my_services {
+  margin-top: 1%;
+  margin-bottom: 1%;
+  box-shadow: 4px 8px 4px var(--secondary-color);
+  width: 90%;
+  padding: 1%;
+}
+
+.services {
+  background-color: #d8f2ff;
+  height: 100%;
+  box-shadow: 4px 8px 4px var(--secondary-color);
+}
+
+.services_container {
+  width: 100%;
+  padding: 50px;
+  font-family: var(--font-type);
+  color: var(--default-font-color);
+}
+
+/* LEFT SERVICE CONTAINER BEGIN */
+.left_services_container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* FUN WITH FRIENDS CONTAINER BEGIN */
+#top_left_services {
+  height: 50%;
+  padding-bottom: 1%;
+}
+
+#meeting_img {
+  object-fit: contain;
+  width: 100px;
+  height: 100px;
+}
+#booking_table {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 19%;
+  height: 100%;
+  flex-direction: row;
+  position: relative;
+}
+.booking_div {
+  display: flex;
+  justify-content: space-around;
+}
+
+.booking_content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+/*-----------FUN WITH FRIENDS CONTAINER END------------*/
+
+/* PRE-ORDER FOOD CONTAINER BEGIN */
+#bottom_left_services {
+  height: 50%;
+  padding-top: 1%;
+}
+#dish_img {
+  object-fit: contain;
+  width: 100px;
+  height: 100px;
+}
+
+#dish {
+  align-self: flex-end;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  width: 19%;
+  height: 100%;
+  position: relative;
+}
+
+.dish_text,
+.booking_text {
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+.dish_content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+/*-----------PRE ORDER FOOD CONTAINER END------------*/
+/*-----------LEFT SERVICE CONTAINER END------------*/
+
+/* RIGHT SERVICE CONTAINER BEGIN */
+
+.right_services_container {
+  display: flex;
+  justify-content: space-around;
+}
+#home_delivery {
+  width: 42%;
+  height: 100%;
+  padding: 2%;
+  flex-direction: row;
+}
+#scooter_img {
+  height: 250px;
+  width: 250px;
+  object-fit: contain;
+}
+.delivery_text {
+  font-size: 40px;
+  font-weight: 800;
+}
+.delivery_content {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+/*-----------RIGHT SERVICE CONTAINER END------------*/
+/*-----------SERVICES CONTAINER END------------*/
+
+/* GLASSY DESIGN */
+.glass {
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(113, 208, 255, 0.3)
+  );
+  border-radius: 0.5rem;
+  z-index: 2;
+  backdrop-filter: blur(2rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*-----------GLASSY DESIGN END------------*/
+
+/* DOWNLOAD CONTAINER BEGIN */
+.download_container {
+  background-color: #d8f2ff;
+  /* background-color: rgba(113, 208, 255, 0.3); */
+  width: 100%;
+}
+
+.apptext_container {
+  display: flex;
+  margin: 5%;
+  margin-bottom: 0;
+  margin-top: 15%;
+}
+
+#download_text {
+  width: max-content;
+  margin: 0px;
+  display: flex;
+  margin: 5%;
+  font-size: 50px;
+  text-align: left;
+}
+
+#blue_box3 {
+  align-self: center;
+}
+.download_desc {
+  left: 13.5%;
+  position: relative;
+  text-align: left;
+  opacity: 0.5;
+}
+#button_img {
+  width: 44%;
+  object-fit: contain;
+  position: relative;
+  left: 18%;
+}
+
+#phone_img {
+  width: 450.11px;
+  height: 575.75px;
+}
+
+.glass3 {
+  /* SPECIFIC TO DOWNLOAD CONTAINER */
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(113, 208, 255, 0.3)
+  );
+  border-radius: 0.5rem;
+  z-index: 2;
+  backdrop-filter: blur(2rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*-----------DOWNLOAD CONTAINER END------------*/
+
+/* BOTTOM CONTAINER BEGIN */
+.bottom_container {
+  width: 100%;
+  /* background-color: rgba(113, 208, 255, 0.3); */
+  background-color: var(--default-color);
+}
+
+#bottom_image {
+  width: 470px; /* 520px;*/
+  height: 500px; /*550px;*/
+  object-fit: contain;
+}
+.glass2 {
+  /* SPECIFIC TO BOTTOM CONTAINER  */
+  background: linear-gradient(
+    to right top,
+    rgba(255, 255, 255, 0.7),
+    rgba(113, 208, 255, 0.3)
+  );
+  border-radius: 0.5rem;
+  z-index: 2;
+  backdrop-filter: blur(2rem);
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+/*-----------BOTTOM CONTAINER END------------*/
+
+/* DEVELOPER CONTAINER BEGIN */
+
+.developer_container {
+  color: white;
+  /* background-color: rgb(4, 60, 90); */
+  background-color: rgb(5, 40, 65);
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+#developer_heading {
+  margin: 2%;
+  line-height: 1.6;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.meet_text {
+  font-size: 65px;
+  font-weight: bold;
+  opacity: 0.9;
+  color: white;
+}
+.developer_detail {
+  margin: 2%;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-evenly; */
+  align-items: flex-start;
+}
+.dev {
+  margin: 1%;
+  margin-right: 12%;
+  text-align: left;
+  line-height: 10px;
+}
+.dev_name {
+  font-size: 23px;
+  opacity: 0.89;
+}
+.dev_image {
+  object-fit: contain;
+  width: 195px;
+  margin-bottom: 0.9%;
+  border-radius: 2px;
+  /* height: 242px; */
+}
+.dev_type {
+  font-size: 16px;
+  opacity: 0.7;
+}
+.dev_icons {
+  margin-top: 5%;
+  text-align: left;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+}
+.ico {
+  text-decoration: none;
+  margin-right: 10px;
+  font-size: 23px;
+  color: white;
+  opacity: 0.8;
+  padding: 1px;
+}
+.ico:hover {
+  opacity: 1;
+  background: white;
+  color: black;
+  text-decoration: none;
+}
+/*-----------DEVELOPER CONTAINER END------------*/
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*-----------CSS FOR LANDING PAGE END------------*/

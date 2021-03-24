@@ -1,0 +1,143 @@
+:root {
+  --default-color: #ecfaff;
+  --secondary-color: #04acfe;
+  --font-type: Poppins;
+  --default-font-color: #2e266f;
+  /* --default-font-color: #ecfaff; */
+}
+/*Parent div styles*/
+.side_drawer {
+  width: 40%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  font-family: var(--font-type);
+  color: #ecfaff;
+  right: 0;
+  background-color: var(--default-color);
+  z-index: 200;
+  box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.5);
+  transform: translateX(100%);
+  transition: transform 0.5s ease-out;
+  overflow: hidden;
+}
+
+.open {
+  transform: translateX(0);
+}
+
+.set_hover:hover {
+  cursor: pointer;
+}
+
+.icon_animation_bg {
+  z-index: -200;
+  position: fixed;
+  left: 0%;
+  /* width: 100%;
+  height: 100%;
+  object-fit: contain; */
+}
+
+/*---------------------Form------------------------------*/
+.heading {
+  text-align: left;
+  font-size: 30px;
+  position: relative;
+  left: 16.75%;
+}
+
+.form_group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-type);
+  color: #ecfaff;
+  margin-top: 20px;
+}
+
+.form {
+  position: relative;
+  width: 50%;
+  height: 50px;
+  overflow: hidden;
+  margin: 2%;
+}
+
+.form input {
+  height: 100%;
+  width: 100%;
+  padding-top: 20px;
+  color: #4dc9ff;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+  /* background-color: var(--default-color); */
+  background: none;
+}
+
+.form label {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid white;
+  text-align: left;
+}
+
+.form label::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  bottom: -2px;
+  left: 0px;
+  border-bottom: 2px solid #4dc9ff;
+  transform: translateX(-100%);
+  transition: transform 0.5s ease;
+}
+
+.content {
+  position: absolute;
+  bottom: 2px;
+  left: 0px;
+  transition: all 0.3s ease;
+}
+
+.form input:focus + .label .content,
+.form input:valid + .label .content {
+  transform: translateY(-100%);
+  font-size: 14px;
+  color: #04acfe;
+}
+
+.form input:focus + .label::after,
+.form input:valid + .label::after {
+  transform: translateX(0%);
+}
+
+.button {
+  width: 50%;
+  /* background-color: var(--default-color); */
+  background: none;
+  border: 2px solid #4dc9ff;
+  color: #ecfaff;
+  height: 50px;
+  font-size: 20px;
+  font-family: var(--font-type);
+  font-weight: 500;
+  transition-duration: 0.5s;
+  margin-top: 20px;
+}
+
+.button:hover {
+  background-color: #04acfe;
+  color: #fff;
+}
+
+.button:focus {
+  outline: none;
+}

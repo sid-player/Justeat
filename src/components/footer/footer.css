@@ -1,0 +1,62 @@
+:root {
+  --default-color: #ecfaff;
+  --secondary-color: #04acfe;
+  --font-type: Poppins;
+  --default-font-color: #2e266f;
+}
+
+#footer {
+  background-color: rgb(5, 40, 65);
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding-bottom: 1%;
+}
+.footer_ruler {
+  width: 88%;
+  border: 0.5px solid white;
+  opacity: 0.8;
+  border-radius: 10px;
+  margin-right: 7.5%;
+}
+.footer_components {
+  display: flex;
+  flex-direction: row;
+}
+.footer_logo {
+  width: 70px;
+  object-fit: contain;
+}
+.footer_mid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 150%;
+  padding-left: 9%;
+  opacity: 0.8;
+}
+.footer_right {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding-left: 14%;
+  font-size: 150%;
+  justify-content: center;
+  opacity: 0.8;
+}
+.icon {
+  text-decoration: none;
+  margin-right: 10px;
+  font-size: 23px;
+  color: white;
+  opacity: 0.8;
+  padding: 1.5px;
+  border-radius: 2px;
+}
+.icon:hover {
+  opacity: 1;
+  background: white;
+  color: black;
+  text-decoration: none;
+}
